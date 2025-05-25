@@ -4,8 +4,9 @@ import requests, os, threading, time, webbrowser
 
 TELEGRAM_TOKEN = "7683381364:AAFhj37XjVYnUT0h43lejQv77tN_q3fTrFI"
 TELEGRAM_CHAT_ID = "6756732013"
-api_key = "1f0vletbpc97y6fu"
-api_secret = "ls90oq137u2k87xxhen77jjcv5yg0hw3"
+api_key = ""#api key here
+api_secret = ""#api secret here
+# Make sure to replace with your actual API key and secret
 access_token_file = "access_token.txt"
 
 app = Flask(__name__)
@@ -28,7 +29,7 @@ def callback():
     try:
         session = kite.generate_session(request_token, api_secret=api_secret)
         with open(access_token_file, "w") as f:
-            f.write(session["access_token"])
+            f.write(session["access_token"]) # type: ignore
         send_telegram("✅ Access token saved. Bot ready.")
         return "<h2>✅ Login success. Access token saved.</h2>"
     except Exception as e:

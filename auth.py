@@ -1,6 +1,6 @@
 from kiteconnect import KiteConnect
 
-api_key = "1f0vletbpc97y6fu"
+api_key = ""#api key here 
 
 # Load access token saved from login
 with open("access_token.txt", "r") as f:

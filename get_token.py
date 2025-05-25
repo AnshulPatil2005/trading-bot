@@ -26,7 +26,7 @@ def get_option_token(symbol):
 # 🚀 Run this once daily before market open
 if __name__ == "__main__":
     try:
-        nifty_price = kite.ltp("NSE:NIFTY 50")["NSE:NIFTY 50"]["last_price"]
+        nifty_price = kite.ltp("NSE:NIFTY 50")["NSE:NIFTY 50"]["last_price"] # type: ignore
         ce_symbol = get_atm_option_symbol(nifty_price, "CE")
         pe_symbol = get_atm_option_symbol(nifty_price, "PE")
 
