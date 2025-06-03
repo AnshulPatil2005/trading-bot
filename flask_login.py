@@ -2,7 +2,7 @@ from flask import Flask, request
 from kiteconnect import KiteConnect
 import requests, os, threading, time, webbrowser
 
-TELEGRAM_TOKEN = "7683381364:AAFhj37XjVYnUT0h43lejQv77tN_q3fTrFI"
+TELEGRAM_TOKEN = ""#telegram token here
 TELEGRAM_CHAT_ID = "6756732013"
 api_key = ""#api key here
 api_secret = ""#api secret here
