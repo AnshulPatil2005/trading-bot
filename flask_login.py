@@ -3,7 +3,7 @@ from kiteconnect import KiteConnect
 import requests, os, threading, time, webbrowser
 
 TELEGRAM_TOKEN = ""#telegram token here
-TELEGRAM_CHAT_ID = "6756732013"
+TELEGRAM_CHAT_ID = ""#telegram chat id here
 api_key = ""#api key here
 api_secret = ""#api secret here
 # Make sure to replace with your actual API key and secret
